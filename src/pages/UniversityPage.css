@@ -1,0 +1,89 @@
+.university-page {
+  padding-top: var(--nav-height);
+}
+
+.university-header {
+  background: var(--off-white);
+  border-bottom: 1px solid rgba(62, 44, 28, 0.1);
+  padding: 80px 80px 60px;
+}
+
+.university-location {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--brown-soft);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.university-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--brown-dark);
+  margin-bottom: 16px;
+}
+
+.university-description {
+  font-size: 18px;
+  color: var(--brown-soft);
+  max-width: 600px;
+}
+
+.course-section {
+  border-bottom: 1px solid rgba(62, 44, 28, 0.05);
+}
+
+.course-section:last-child {
+  border-bottom: none;
+}
+
+.course-section-content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.course-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.tab-section {
+  width: 100%;
+}
+
+.tab-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--brown-dark);
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(62, 44, 28, 0.1);
+}
+
+.course-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 968px) {
+  .university-header {
+    padding: 60px 40px 40px;
+  }
+
+  .university-name {
+    font-size: 36px;
+  }
+
+  .course-section-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .course-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
