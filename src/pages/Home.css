@@ -1,0 +1,30 @@
+.home {
+  padding-top: var(--nav-height);
+}
+
+.container {
+  padding: 60px 80px;
+}
+
+.universities-grid,
+.pyqs-grid,
+.notes-grid,
+.playlists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+@media (max-width: 968px) {
+  .container {
+    padding: 40px;
+  }
+
+  .universities-grid,
+  .pyqs-grid,
+  .notes-grid,
+  .playlists-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
